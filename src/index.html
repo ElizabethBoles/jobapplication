@@ -25,7 +25,7 @@
         </header>
 
         <!-- You might want to change the requestb.in URL below to your own! -->
-        <form action='http://requestb.in/13w63tg1' method='post' class='form-horizontal'>
+        <form class='form-horizontal'>
 
             <fieldset>
                 <legend>Your Info</legend>
@@ -33,7 +33,8 @@
                 <section class='form-group'>
                     <label for='full-name' class='col-sm-3 control-label'>Full Name</label>
                     <aside class='col-sm-9'>
-                        <input type='text' name='full-name' id='full-name' placeholder='Jane Doe' class='form-control' required>
+                      <!-- aside is parent node of input-->
+                      <input type='text' name='full-name' id='full-name' placeholder='Jane Doe' class='form-control' required>
                     </aside>
                 </section>
 
@@ -60,7 +61,7 @@
                             <input type='checkbox' name='languages' id='languages-css'>
                             CSS
                         </label>
-                        <figure>0 languages</figure>
+                        <figure class='lngs'>0 languages</figure>
                     </aside>
                 </section>
             </fieldset>
